@@ -1,38 +1,151 @@
-.App {
+body{
+  background-color: #F5D5AE;
+}
+.block {
+  border: 1px black solid;
+  background-color: #852999;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  margin-top: 30px;
+  margin-right: 80px;
+  inline-size: 400px;
+  overflow-wrap: break-word;
+  opacity: .5;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.sign {
+
+}
+
+.footer {
+  padding: 20px;
+  background-color: darkgrey;
+  color: #FF9A5A;
+  text-align: left;
+
+}
+
+.inputs {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  /* margin-left: 200px;
+   margin-top: 30px;
+   margin-bottom: 60px;*/
+  margin-left: 400px;
 }
 
-.App-link {
-  color: #61dafb;
+.button-{
+  position: relative;
+
+  top: 10px;
+}
+.JSON {
+  max-width: 150px;
+  padding-left: 25%;
+  opacity: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-62 {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+hr{
+  position: relative;
+
+  width: 150px;
+  top: 30px;
+  color: #EF4765;
+}
+#triangle-down {
+  position: absolute;
+  top: 100px;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 80px solid darkgrey;
+}
+#triangle-down2 {
+  position: relative;
+  bottom: 30px;
+  right: 11px;
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 30px solid #EF4765;
+}
+#triangle-down3 {
+  position: absolute;
+  top: 100px;
+  left: 130px;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 80px solid darkgrey;
+}
+#triangle-down4 {
+  position: relative;
+  bottom: 30px;
+  right: 11px;
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 30px solid #EF4765;
+}
+.FooterP{
+  padding-left: 50px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #FFFFFF;
+}
+input{
+  padding-top: 20px;
+  border: none;
+  border-bottom: 2px solid #FF9A5A;
+  background-color: #F5D5AE;
+  margin: 20px;
+}
+input:focus{
+  border:   0;
+}
+.buttonr{
+  margin-top: 50px;
+  justify-content: center;
 }
